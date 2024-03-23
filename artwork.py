@@ -21,5 +21,10 @@ class Artwork:
         #place holds future logic update artwork details
         pass
 
+    #methods is intended to display information about the artwork
     def displayArtwork (self):
-        pass
+        print(f"Title:{self.title}") #printing the title of the artwork
+        print(f"Artist:{self.artist}") #prinitng the name of the artist
+        print(f"Year:{self.dateOfCreation}") #printing the date of creation
+        print(f"Location:{self.exhibitionLocation}") #printing the location
+        print(f"Significance:{self.historicalSignificance}") #printing the historical significance of the artwork
