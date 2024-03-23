@@ -16,4 +16,8 @@ class Exhibition:
         pass
     #method to display information about the exhibition
     def displayExhibition(self):
-        pass
+        print(f"Exhibition Start Date: {self.startDate}")
+        print(f"Exhibition End Date: {self.endDate}")
+        print(f"Exhibition Location: {self.location}")
+
+

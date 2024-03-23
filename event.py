@@ -22,5 +22,7 @@ class Event(Exhibition):
         pass
     #method is intended to output the details of the event
     def displayEventDetails(self):
-        #placeholds the future code to dspalay the event details
-        pass
+        super().displayExhibition()
+        print(f"Event Type: {self.eventType}")
+        print(f"Event Price: {self.specialPrice}")
+
