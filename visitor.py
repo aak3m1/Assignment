@@ -23,3 +23,5 @@ class Visitors:
     def purchaseTicket(self, ticket):
         #the ticket passed as a parameter is appened to the tickets list
         self.tickets.append(ticket)
+
+
