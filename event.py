@@ -1,5 +1,6 @@
 #importing the exhibition class from the exhibition module to extend it
 from exhibition import Exhibition
+import datetime
 class Event(Exhibition):
     """
     this class is a subclass of exhibition and represents a special
@@ -19,7 +20,12 @@ class Event(Exhibition):
     #place holds and does not contain any implementaitopn
     def scheduleEvent(self):
         #placeholder for futire event scheduiling logic
-        pass
+        today= datetime.date.today()
+        startDate= datetime.datetime.strptime(self.startDate, "%Y - %m - %d").date()
+        if startDate < today:
+            print("Error: event canoot be scheduled in the past")
+        else:
+            print(f"Event '{self.eventType}' successfully scheduled from {self.startDate} to {self.endDate}")
 
     #method is intended to output the details of the event
     def displayEventDetails(self):

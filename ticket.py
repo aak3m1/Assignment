@@ -17,7 +17,7 @@ class Ticket:
 
     #place holder for calculating the price of the ticket
     def calculatePrice(self):
-        if self.visitorCategory in ['Child','Teacher','Senior']
+        if self.visitorCategory in ['Child','Teacher','Senior']:
             return 0 #free tickets for specific categories
         elif self.visitorCategory == 'Group':
             return self.price * 0.5 #50% discount for groups

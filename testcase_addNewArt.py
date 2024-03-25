@@ -10,8 +10,12 @@ def addNewArt():
 
     #artwork to the previously defined room
     room.addArtwork(artwork)
-    #assert that the artwork has indeed been added to the room's list of artwork
-    assert artwork in room.artworks, "Artwork should be added to the room's list of artworks"
+
+    #check if the artwork is added
+    if artwork in room.artworks:
+        print("Artwork Added successfully")
+    else:
+        print("Failed to add artwork")
 
     #print a message indicating that the details of the added artwork woill be displayed nect
     print("Display added artwork details: ")

@@ -15,10 +15,12 @@ def ticketPurchase():
     assert ticket in visitor.tickets, "Tickets should be added to visitors list of tickets"
 
     #printing
+    print("")
     print("Dispaying purchased ticket details: ")
     ticket.printTicketDetails()
 
 #ticket purcahse is withing the main
 if __name__ == "__main__":
-    ticketPurchase() #execute the function to perform the ticket purchase test.
+    print("")
+    ticketPurchase()
     print("Passed the ticket Purchase")

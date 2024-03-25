@@ -15,7 +15,9 @@ def openNewExhibition():
 def openNewEvent():
     #create a new instance of the event class
     print("")
+
     event = Event ("2024-06-11", "2024-07-20","Outdoor","Concert",355.0)
+
     #assert statement to ensure the details are correctly set
     assert event.eventType == "Concert", "event type should be set to Concert"
     assert event.specialPrice == 355.0, "special price event price should be set"
