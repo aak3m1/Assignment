@@ -27,7 +27,7 @@ if __name__=="__main__":
     #testing new exhibiton
     openNewExhibition()
     print("Pass Testing Opening New Exhibition")
-    #testing nre event 
+    #testing new event
     openNewEvent()
     print("Pass Testing Opening New Event")
 
