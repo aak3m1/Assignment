@@ -13,7 +13,8 @@ class Exhibition:
 
     #method to handle logistic of scheduling an exhibition
     def scheduleExhibition(self):
-        pass
+        print(f"Exhibition scheduled from {self.startDate} to {self.endDate} at {self.location}.")
+
     #method to display information about the exhibition
     def displayExhibition(self):
         print(f"Exhibition Start Date: {self.startDate}")

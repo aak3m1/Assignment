@@ -20,9 +20,9 @@ class Event(Exhibition):
     def scheduleEvent(self):
         #placeholder for futire event scheduiling logic
         pass
+
     #method is intended to output the details of the event
     def displayEventDetails(self):
         super().displayExhibition()
         print(f"Event Type: {self.eventType}")
-        print(f"Event Price: {self.specialPrice}")
-
+        print(f"Special Price: {self.specialPrice}")

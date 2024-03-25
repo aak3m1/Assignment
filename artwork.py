@@ -17,9 +17,14 @@ class Artwork:
 
     #methods is intended updating the artwork information
     #placeholder does not contins any implementation
-    def updateArtworkInfo(self):
+    def updateArtworkInfo(self, newLocation= None, newSignificance=None):
         #place holds future logic update artwork details
-        pass
+        if newLocation:
+            self.exhibitionLocation = newLocation
+        if newSignificance:
+            self.historicalSignificance = newSignificance
+        print(f"Artwork {self.title} updated")
+
 
     #methods is intended to display information about the artwork
     def displayArtwork (self):

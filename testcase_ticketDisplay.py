@@ -1,15 +1,18 @@
+#importing ticket class from the ticket module
 from ticket import Ticket
 def printTicketDetails():
-    ticket = Ticket ("AA104-1145-2", "2024-03-22","2024-04-01",63.0,"Adult")
+    #instance of the ticket
+    ticket = Ticket("AA104-1145-2", "2024-03-22", "2024-04-01", 63.0, "Adult")
 
     try:
+        print("Attempting to display th ticket details... ")
         ticket.printTicketDetails()
-        passed = True
+        print ("Ticket deails displayed successfully" )
     except Exception as e:
-        passed = False
+        print(f"An error occured: {e}")
+        assert False, "Failed to display"
 
-    assert passed, "print Ticket details wwithout errors"
-
-if __name__ == "__main__":
-    printTicketDetails
-    print("passed ticket details")
+if __name__== "__main__":
+    printTicketDetails()
+    print("-----")
+    print("Passed ticket details")

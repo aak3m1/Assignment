@@ -16,13 +16,17 @@ class Room:
     def addArtwork(self,artwork):
         #artwork object passed as an argument is appened to the list of artwork in the room
         self.artworks.append(artwork)
+        print(f"Artwork titled '{artwork.title}' added to Room {self.roomNumber} ")
 
     #methods removes an artwork from the rooms list of artwork
     def removeArtwork(self,artwork):
-        #artwork object passed as an argument is removed from the list of art work in the room
-        self.artworks.remove(artwork)
+        try:
+            self.artworks.remove(artwork)
+            print(f"Artwork titled '{artwork.title}' removed from Room {self.roomNumber}")
+        except ValueError:
+            print(f"Artwork titled '{artwork.title}' nt found in Room {self.roomNumber}")
 
     def displayArtworkInRoom(self):
         print(f"Artworks in room {self.roomNumber} on Floor {self.floor}: ")
         for artwork in self.artworks:
-            artwork.displayArtwork()
+            print(f"-{artwork.title} by {artwork.artist}")

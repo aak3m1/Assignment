@@ -2,6 +2,7 @@ class Visitors:
     """
     this class is a visitor constructor
     where it initializes a new instance of the class.
+    capable of purchaing ticket
     """
     def __init__(self,name,age, category):
         #instance variable to store the name of the visitor
@@ -14,14 +15,14 @@ class Visitors:
         self.tickets = []
 
     #method to placehold for registring visitors
-    def registerVisitors (self):
+    def registerVisitors(self):
         #there is no implementation so pass
-        pass
+        print(f"{self.name} registered as a visitor")
 
     #method allows a visitor to purhcase a ticket
     #then it will be added to the visitors list
     def purchaseTicket(self, ticket):
         #the ticket passed as a parameter is appened to the tickets list
         self.tickets.append(ticket)
-
+        print(f"{self.name} purchased ticket ID {ticket.ticketID}")
 

@@ -18,11 +18,17 @@ class Tour:
     #A placeholder and does not contain any implementation
     def scheduleTour(self):
         #place holding for future tour scheduling logic
-        pass
+        print(f"Tour {self.tourID} scheduled on {self.date}")
 
 
-    #method is intendend to display the details of the tour
+    #method is independent to display the details of the tour
     #A placeholder and does not contain any implementation
     def displayTourDetails(self):
         #placeholder for a future code to display tour details
-        pass
+        print("Tour ID: {self.tourID}")
+        print("Date: {self.date}")
+        print("Group Size: {self.visitorGroupSize}")
+        print("Guide: {self.guideName}")
+
+
+
