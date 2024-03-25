@@ -19,10 +19,13 @@ class Artwork:
     #placeholder does not contins any implementation
     def updateArtworkInfo(self, newLocation= None, newSignificance=None):
         #place holds future logic update artwork details
+        #checks if the new location is providedm and update if so
         if newLocation:
             self.exhibitionLocation = newLocation
+        #checks if the new historucal significance information is provided and update
         if newSignificance:
             self.historicalSignificance = newSignificance
+        #print that it have been updated
         print(f"Artwork {self.title} updated")
 
 
