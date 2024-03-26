@@ -22,11 +22,11 @@ class Room:
     def removeArtwork(self,artwork):
         try:
             self.artworks.remove(artwork)
-            print(f"Artwork titled '{artwork.title}' removed from Room {self.roomNumber}")
+            print(f"Artwork titled '{artwork.title}' removed from Room {self.roomNumber}")#attempt to remove yhe provided artwork
         except ValueError:
-            print(f"Artwork titled '{artwork.title}' nt found in Room {self.roomNumber}")
+            print(f"Artwork titled '{artwork.title}' nt found in Room {self.roomNumber}")#error message if the artwork is not found
 
     def displayArtworkInRoom(self):
-        print(f"Artworks in room {self.roomNumber} on Floor {self.floor}: ")
-        for artwork in self.artworks:
-            print(f"-{artwork.title} by {artwork.artist}")
+        print(f"Artworks in room {self.roomNumber} on Floor {self.floor}: ") #room information header
+        for artwork in self.artworks: #iterate through rach artwork in the room list
+            print(f"-{artwork.title} by {artwork.artist}") #print he title and artist of eachwork

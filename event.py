@@ -20,15 +20,15 @@ class Event(Exhibition):
     #place holds and does not contain any implementaitopn
     def scheduleEvent(self):
         #placeholder for futire event scheduiling logic
-        today= datetime.date.today()
-        startDate= datetime.datetime.strptime(self.startDate, "%Y - %m - %d").date()
+        today= datetime.date.today() #todays date
+        startDate= datetime.datetime.strptime(self.startDate, "%Y - %m - %d").date() #converting start date string to date object
         if startDate < today:
-            print("Error: event canoot be scheduled in the past")
+            print("Error: event canoot be scheduled in the past") #error if the event start date is in the past
         else:
-            print(f"Event '{self.eventType}' successfully scheduled from {self.startDate} to {self.endDate}")
+            print(f"Event '{self.eventType}' successfully scheduled from {self.startDate} to {self.endDate}")#confirming
 
     #method is intended to output the details of the event
     def displayEventDetails(self):
-        super().displayExhibition()
-        print(f"Event Type: {self.eventType}")
-        print(f"Special Price: {self.specialPrice}")
+        super().displayExhibition() #display details inherited from the exhibition class
+        print(f"Event Type: {self.eventType}") #printing type
+        print(f"Special Price: {self.specialPrice}") #printing price

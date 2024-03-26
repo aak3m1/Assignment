@@ -17,8 +17,8 @@ class Exhibition:
 
     #method to display information about the exhibition
     def displayExhibition(self):
-        print(f"Exhibition Start Date: {self.startDate}")
-        print(f"Exhibition End Date: {self.endDate}")
-        print(f"Exhibition Location: {self.location}")
+        print(f"Exhibition Start Date: {self.startDate}") #printing start date
+        print(f"Exhibition End Date: {self.endDate}") #printing end date
+        print(f"Exhibition Location: {self.location}") #printing location
 
 
