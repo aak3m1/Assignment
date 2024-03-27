@@ -23,8 +23,10 @@ class Tour:
         if len(self.visitors) < self.visitorGroupSize:
             self.visitors.append(visitor)
             print(f"{visitor.name} has been added to the tour {self.tourID}")
+            print("")
         else:
             print("Tour is full capacity")
+            print("")
 
 
     #method is independent to display the details of the tour
