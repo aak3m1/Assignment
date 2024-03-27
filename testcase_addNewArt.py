@@ -26,4 +26,5 @@ def addNewArt():
 if __name__== "__main__":
     #if this is the main program it will execute the addnewart function
     addNewArt()
+    print("")
     print ("Adding new artwork pass")
