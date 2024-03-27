@@ -10,25 +10,34 @@ class Tour:
         self.date= date
         #variable the visitor group size to store the number or visitor
         #in the tour group as an integer
-        self.visitorGroupSize = visitorGroupSize
+        self.visitorGroupSize = int(visitorGroupSize) #convert to int
         #variable that stores the name of the tour guide as string
         self.guideName = guideName
+        #list to store visitors
+        self.visitors = []
 
     #method is intended to handle the scheduling of a tour
     #A placeholder and does not contain any implementation
-    def scheduleTour(self):
+    def addVisitor(self,visitor):
         #place holding for future tour scheduling logic
-        print(f"Tour {self.tourID} scheduled on {self.date}")
+        if len(self.visitors) < self.visitorGroupSize:
+            self.visitors.append(visitor)
+            print(f"{visitor.name} has been added to the tour {self.tourID}")
+        else:
+            print("Tour is full capacity")
 
 
     #method is independent to display the details of the tour
     #A placeholder and does not contain any implementation
     def displayTourDetails(self):
         #placeholder for a future code to display tour details
-        print("Tour ID: {self.tourID}")
-        print("Date: {self.date}")
-        print("Group Size: {self.visitorGroupSize}")
-        print("Guide: {self.guideName}")
+        print(f"Tour ID: {self.tourID}")
+        print(f"Date: {self.date}")
+        print(f"Group Size: {self.visitorGroupSize}")
+        print(f"Guide Name: {self.guideName}")
+        print("Visitors: ")
+        for visitor in self.visitors:
+            print(f"- {visitor.name}")
 
 
 
